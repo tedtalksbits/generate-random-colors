@@ -1,4 +1,4 @@
-# generate-random-colors
+# generate-random-colors with dark mode toggler
 
 
 ## Simple Random Color Generator. 
