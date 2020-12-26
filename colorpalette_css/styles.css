@@ -111,7 +111,7 @@ body {
           transform: translateY(-7px);
 }
 
-.palette-card:hover .palette-hash {
+.palette-card:hover .palette-hex {
   color: #0b1225;
 }
 
@@ -123,9 +123,11 @@ body {
   transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.4s;
 }
 
-.palette-hash {
+.palette-hex {
   font-size: 13px;
   color: #76767a;
+  user-select: all;  /* necessary for copying color */
+  cursor: pointer;
 }
 
 .button-container {
@@ -199,7 +201,7 @@ body.dark-mode .palette-card {
   background: #EBEBF3;
 }
 
-body.dark-mode .palette-hash {
+body.dark-mode .palette-hex {
   color: #0b1225;
 }
 
@@ -225,5 +227,19 @@ body.dark-mode span {
 
 #p-5 {
   background: #59bbfd;
+}
+
+/* when copy */
+.copy-text{
+  display: none;
+}
+.copy-text.copied{
+   display: block;
+   position: absolute;
+   font-weight: 700;
+   background: #151925;
+   padding: 3px;
+   border-radius: .3rem;
+   color: white;
 }
 /*# sourceMappingURL=styles.css.map */
